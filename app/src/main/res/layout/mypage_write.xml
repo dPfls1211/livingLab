@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edge"
+        android:padding="15dp"
+        android:text="본인이 작성한 글"
+        android:gravity="center"
+        android:textSize="20dp" />
+
+  <!--  <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:background="@drawable/edge">-->
+    <ListView
+        android:padding="10dp"
+        android:background="@drawable/edge"
+        android:id="@+id/writeList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+<!--    </ScrollView>-->
+</LinearLayout>

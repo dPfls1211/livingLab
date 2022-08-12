@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="#4169E1"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/titleName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#4169E1"
+            android:padding="15dp"
+            android:layout_weight="4"
+            android:text="대학"
+            android:textSize="20dp" />
+        <Button
+            android:id="@+id/studyBack"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:onClick="onClick"
+            android:background="#4169E1"
+            android:layout_weight="1"
+            android:text="back"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/newText"
+        android:layout_width="60dp"
+        android:layout_height="35dp"
+        android:textSize="10dp"
+        android:text="글쓰기"
+        android:layout_gravity="right"
+        android:onClick="onClick"
+        android:backgroundTint="#6495ED"/>
+
+
+            <ListView
+                android:id="@+id/studyList"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></ListView>
+
+</LinearLayout>

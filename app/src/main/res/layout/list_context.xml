@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/X"
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:text="X"
+            android:textSize="25dp"
+            android:onClick="onClick"
+            android:background="#FFFFFF"/>
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="3dp"
+            android:text="글 쓰기"
+            android:textSize="20dp"/>
+        <Button
+            android:id="@+id/upload"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_margin="2dp"
+            android:text="완료"
+            android:onClick="onClick"
+            android:background="#ffffff"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/contextTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="제목"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/context"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:padding="10dp"
+        android:hint="글을 작성해주세요"/>
+
+</LinearLayout>
